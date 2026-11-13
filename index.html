@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>확률 대결! 행운의 상자를 골라라</title>
+<style>
+:root{font-family: 'Pretendard','Noto Sans KR',system-ui,sans-serif;color:#f6f7fb;background:#0b1223}*{box-sizing:border-box}body{margin:0;min-height:100vh;background:radial-gradient(circle at 10% 10%,#23366b 0,transparent 35%),radial-gradient(circle at 80% 85%,#26395d 0,transparent 37%),#0b1223}.wrap{max-width:1000px;margin:auto;padding:26px 18px 45px}.top{display:flex;justify-content:space-between;gap:12px;align-items:center;flex-wrap:wrap}.brand{font-weight:900;color:#d7eaff;letter-spacing:.3px}.pill{border:1px solid #52658b;padding:9px 13px;border-radius:99px;background:#182540;font-weight:800}.hero{text-align:center;margin:38px auto 25px}.eyebrow{color:#8cdafa;font-weight:900;letter-spacing:2px}.hero h1{font-size:clamp(30px,5vw,52px);line-height:1.16;margin:12px 0}.hero p{color:#c1cee3;margin:0;line-height:1.6}.panel{border:1px solid #465679;border-radius:26px;background:#14213bcc;box-shadow:0 20px 65px #0005;padding:clamp(20px,4vw,34px)}.hidden{display:none!important}.btn{font:inherit;font-weight:900;cursor:pointer;color:#0a1830;background:#8ee3ff;border:0;border-radius:14px;padding:15px 23px;transition:transform .15s,filter .15s}.btn:hover{filter:brightness(1.08);transform:translateY(-2px)}.btn:focus-visible,.choice:focus-visible{outline:4px solid #ffcd6e;outline-offset:3px}.btn.secondary{background:#293d60;color:white;border:1px solid #7284aa}.center{text-align:center}.intro{max-width:670px;margin:auto}.intro h2{font-size:26px}.intro p{line-height:1.9;color:#d2dbee}.rules{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:24px 0}.rule{background:#203253;padding:17px;border-radius:15px;text-align:center}.rule strong{display:block;color:#9ae7ff;margin-bottom:6px}.small{color:#bfcbdf;font-size:13px}.progressrow{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-bottom:12px;font-weight:800}.progress{height:10px;border-radius:100px;overflow:hidden;background:#304161;margin-bottom:23px}.bar{height:100%;background:linear-gradient(90deg,#64e6d6,#a3deff);width:0%;transition:width .3s}.question{font-size:clamp(22px,3vw,30px);font-weight:900;margin-bottom:8px}.hint{color:#b9c8e1;margin-bottom:22px}.choices{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}.choice{min-width:0;border:2px solid #40557a;background:#1c2e4e;border-radius:20px;padding:19px 12px;color:inherit;cursor:pointer;text-align:center;transition:.15s;font:inherit}.choice:hover:not(:disabled){transform:translateY(-4px);border-color:#80d7ff;background:#273e65}.choice:disabled{cursor:default}.choice.good{border-color:#5be3ae;background:#184d49}.choice.bad{border-color:#ff8888;background:#603342}.boxicon{font-size:38px;margin-bottom:8px}.choice h3{margin:3px 0 14px;font-size:20px}.balls{display:flex;gap:5px;flex-wrap:wrap;justify-content:center;align-content:center;min-height:100px}.ball{display:inline-block;width:23px;height:23px;border-radius:100%;box-shadow:inset -5px -5px 8px #0003,inset 3px 3px 4px #fff7}.red{background:#ff6477}.blue{background:#5cafff}.yellow{background:#ffd765}.legend{color:#c9d5e7;margin-top:13px;font-size:14px}.result{border-radius:17px;margin-top:20px;padding:20px;background:#263857;line-height:1.8}.result.correct{border:1px solid #60d6ad}.result.wrong{border:1px solid #f9a4ac}.result h3{margin:0 0 7px;font-size:22px}.math{font-weight:800;color:#bfefff}.footer{display:flex;align-items:center;justify-content:flex-end;gap:12px;margin-top:18px}.scorebig{font-size:62px;font-weight:1000;color:#9feaff;margin:8px 0}.rank{font-size:24px;font-weight:900}.review{background:#203151;border-radius:15px;margin:12px 0;padding:15px;text-align:left}.muted{color:#aebed6}.nowrap{white-space:nowrap}@media(max-width:650px){.choices{grid-template-columns:1fr}.choice{display:grid;grid-template-columns:45px 1fr;grid-template-rows:auto auto;align-items:center;gap:5px;padding:14px}.boxicon{grid-row:1/3;margin:0}.choice h3{margin:0;text-align:left}.balls{grid-column:2;min-height:0;justify-content:flex-start}.legend{grid-column:2;text-align:left;margin:3px 0 0}.rules{grid-template-columns:1fr}.hero{margin-top:24px}.ball{height:19px;width:19px}.panel{padding:18px}}
+</style>
+</head><body><main class="wrap">
+<header class="top"><div class="brand">🎲 MATH MINI GAME</div><div class="pill" id="status">5~10분 미니 게임</div></header>
+<section class="hero"><div class="eyebrow">PROBABILITY CHALLENGE</div><h1>확률 대결!<br>행운의 상자를 골라라 🎁</h1><p>공의 개수만 보지 말고, <strong>전체 공 중에서 원하는 공의 비율</strong>을 비교해 보세요!</p></section>
+<section class="panel intro" id="intro"><h2>🔍 오늘의 미션</h2><p>세 상자 중 <strong>빨간 공을 뽑을 확률이 가장 높은 상자</strong>를 골라 주세요. 어떤 문제에는 확률이 같은 상자도 등장해요. 8문제를 풀고 확률 탐정 등급에 도전하세요!</p><div class="rules"><div class="rule"><strong>8라운드</strong><span class="small">빠르게 즐기는 복습</span></div><div class="rule"><strong>정답 +10점</strong><span class="small">80점 만점</span></div><div class="rule"><strong>즉시 해설</strong><span class="small">분수로 확률 비교</span></div></div><div class="center"><button class="btn" id="start">게임 시작 🚀</button></div></section>
+<section class="panel hidden" id="game"><div class="progressrow"><span id="round">문제 1 / 8</span><span id="score">점수 0점</span></div><div class="progress"><div class="bar" id="bar"></div></div><div class="question" id="question">빨간 공이 나올 확률이 가장 높은 상자는?</div><div class="hint">모든 공은 크기와 모양이 같고, 하나씩 무작위로 뽑습니다.</div><div class="choices" id="choices"></div><div id="result" class="result hidden" aria-live="polite"></div><div class="footer"><button class="btn hidden" id="next">다음 문제 →</button></div></section>
+<section class="panel center hidden" id="finish"><div style="font-size:50px">🏆</div><h2>확률 대결 종료!</h2><div class="scorebig" id="finalScore">0점</div><div class="rank" id="rank"></div><p class="muted" id="finishText"></p><div id="reviews"></div><button class="btn" id="restart">다시 도전하기 ↻</button></section>
+</main><script>
+'use strict';
+// 각 상자 [빨강, 파랑, 노랑] / 각 문항은 유일한 정답을 갖도록 검증함.
+const BANK=[
+ [[2,2,0],[3,3,0],[4,1,3]],
+ [[1,3,0],[2,2,0],[3,1,2]],
+ [[3,2,1],[2,1,3],[4,4,0]],
+ [[2,0,3],[4,4,1],[3,3,3]],
+ [[4,1,1],[3,2,0],[5,4,1]],
+ [[1,1,0],[2,3,0],[3,4,0]],
+ [[2,4,2],[3,1,2],[4,3,3]],
+ [[5,2,3],[2,1,1],[3,4,1]],
+ [[1,0,2],[2,1,1],[3,2,1]],
+ [[3,3,2],[4,2,2],[2,3,0]],
+ [[4,3,0],[3,1,2],[2,1,1]],
+ [[1,2,1],[2,3,1],[3,3,2]],
+ [[3,1,0],[4,2,2],[5,3,2]],
+ [[2,1,1],[1,2,0],[3,1,1]],
+ [[3,0,3],[2,1,1],[4,2,2]],
+ [[1,3,1],[2,1,2],[3,2,3]]
+];
+// 두 상자 동률이어도 하나를 고르는 문항이 되지 않게 유일한 최고 확률만 채택
+const valid=BANK.filter(row=>{const vals=row.map(b=>b[0]/b.reduce((a,c)=>a+c,0));return vals.filter(v=>Math.abs(v-Math.max(...vals))<1e-10).length===1});
+let deck=[],idx=0,points=0,logs=[],answered=false;
+const $=id=>document.getElementById(id);
+const hide=(id,on)=>$(id).classList.toggle('hidden',on);
+function gcd(a,b){while(b){[a,b]=[b,a%b]}return a}
+function fraction(b){let n=b[0],d=b.reduce((a,c)=>a+c,0),g=gcd(n,d);return `${n}/${d} = ${n/g}/${d/g}`}
+function shuffle(arr){const a=[...arr];for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]]}return a}
+function start(){deck=shuffle(valid).slice(0,8).map(row=>shuffle(row.map(x=>[...x])));idx=0;points=0;logs=[];hide('intro',true);hide('finish',true);hide('game',false);render()}
+function render(){answered=false;const row=deck[idx];$('status').textContent=`${idx+1} / 8 라운드`;$('round').textContent=`문제 ${idx+1} / 8`;$('score').textContent=`점수 ${points}점`;$('bar').style.width=`${idx/8*100}%`;hide('result',true);hide('next',true);$('choices').innerHTML='';row.forEach((b,i)=>{const el=document.createElement('button');el.className='choice';el.type='button';const dots=b.map((n,j)=>Array.from({length:n},()=>`<span class="ball ${['red','blue','yellow'][j]}"></span>`).join('')).join('');el.innerHTML=`<div class="boxicon">${['🎁','📦','🧰'][i]}</div><h3>${'ABC'[i]} 상자</h3><div class="balls">${dots}</div><div class="legend">🔴 ${b[0]}개 · 🔵 ${b[1]}개 · 🟡 ${b[2]}개</div>`;el.onclick=()=>answer(i);$('choices').appendChild(el)})}
+function answer(selected){if(answered)return;answered=true;const row=deck[idx];const vals=row.map(b=>b[0]/b.reduce((a,c)=>a+c,0));const correct=vals.indexOf(Math.max(...vals));const ok=selected===correct;if(ok)points+=10;logs.push({n:idx+1,ok,correct,chosen:selected});[...$('choices').children].forEach((el,i)=>{el.disabled=true;if(i===correct)el.classList.add('good');else if(i===selected)el.classList.add('bad')});$('score').textContent=`점수 ${points}점`;$('bar').style.width=`${(idx+1)/8*100}%`;const result=$('result');result.className=`result ${ok?'correct':'wrong'}`;result.innerHTML=`<h3>${ok?'🎉 정답! +10점':'🔎 아쉽지만, 지금 알면 돼요!'}</h3><div>정답은 <strong>${'ABC'[correct]} 상자</strong>입니다. 확률은 <strong>빨간 공의 수 ÷ 전체 공의 수</strong>로 구해요.</div><div class="math">${row.map((b,i)=>`${'ABC'[i]}: ${fraction(b)}`).join('<br>')}</div><div>공이 가장 많은 상자가 아니라, <strong>빨간 공의 비율이 가장 높은 상자</strong>를 고르세요!</div>`;hide('next',false);$('next').textContent=idx===7?'결과 보기 🏆':'다음 문제 →'}
+function next(){if(!answered)return;idx++;if(idx>=8)finish();else render()}
+function finish(){hide('game',true);hide('finish',false);$('status').textContent='도전 완료';$('finalScore').textContent=`${points} / 80점`;$('rank').textContent=points===80?'👑 확률 마스터':points>=60?'🌟 확률 탐정':points>=40?'🧭 확률 수사관':'🌱 확률 새싹';$('finishText').textContent=points===80?'모든 문제를 정확하게 해결했어요!':'전체 공 중 빨간 공이 차지하는 비율을 떠올리며 한 번 더 도전해 보세요.';const mistakes=logs.filter(x=>!x.ok);$('reviews').innerHTML=mistakes.length?`<h3>복습할 문제</h3>${mistakes.map(x=>`<div class="review">${x.n}번 문제 · 선택: ${'ABC'[x.chosen]} / 정답: <b>${'ABC'[x.correct]}</b></div>`).join('')}`:'<p>✨ 틀린 문제 없이 완벽하게 해결했습니다!</p>'}
+$('start').onclick=start;$('restart').onclick=start;$('next').onclick=next;
+</script></body></html>
